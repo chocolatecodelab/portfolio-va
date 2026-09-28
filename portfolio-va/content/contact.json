@@ -1,0 +1,36 @@
+{
+  "sectionTitle": "GOT SOMETHING OFF YOUR PLATE?",
+  "subtitle": "Tell me what you need help with — whether it's streamlining recurring operations, untangling spreadsheet databases, or automating manual workflows.",
+  "ctaButton": {
+    "label": "Start a conversation",
+    "href": "mailto:muhammadnazargunawan@gmail.com?subject=Virtual%20Assistant%20Inquiry%20-%20Nazar%20Gunawan"
+  },
+  "contactChannels": [
+    {
+      "label": "Email",
+      "value": "muhammadnazargunawan@gmail.com",
+      "href": "mailto:muhammadnazargunawan@gmail.com"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/nazargunawan",
+      "href": "https://linkedin.com/in/nazargunawan"
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/nazargunawan",
+      "href": "https://github.com/nazargunawan"
+    },
+    {
+      "label": "Developer Portfolio",
+      "value": "nazargunawan.vercel.app",
+      "href": "https://nazargunawan.vercel.app"
+    }
+  ],
+  "meta": {
+    "location": "Indonesia",
+    "timezone": "GMT+7",
+    "status": "Available for remote work worldwide",
+    "copyright": "Muhammad Nazar Gunawan"
+  }
+}

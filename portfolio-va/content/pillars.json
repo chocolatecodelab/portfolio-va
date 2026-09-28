@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "What I Can Take Off Your Plate",
+  "sectionSubtitle": "Focus on high-leverage decisions while I streamline the operational overhead.",
+  "pillars": [
+    {
+      "id": "research",
+      "title": "Research",
+      "examples": [
+        "Web & industry research",
+        "Competitor & market analysis",
+        "Lead sourcing & qualification"
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "Operations",
+      "examples": [
+        "Task & workflow management",
+        "SOP & process documentation",
+        "Executive scheduling & inbox triage"
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Data",
+      "examples": [
+        "Google Sheets system architecture",
+        "CRM cleanup & database formatting",
+        "Data hygiene & regular reporting"
+      ],
+      "relatedSection": "#work"
+    },
+    {
+      "id": "automation",
+      "title": "Automation",
+      "examples": [
+        "AI-assisted research workflows",
+        "Custom Google Apps Script tools",
+        "End-to-end task automation"
+      ],
+      "relatedSection": "#work"
+    }
+  ]
+}

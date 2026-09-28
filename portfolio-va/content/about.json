@@ -1,0 +1,25 @@
+{
+  "sectionTitle": "About",
+  "bio": [
+    "I'm a computer science graduate and software developer who enjoys organizing messy information, solving operational problems, and making digital work simpler. I've led development teams, analyzed markets for a state-owned enterprise, and built systems that small businesses and students actually use.",
+    "Based in Indonesia. Available for remote work worldwide across flexible time zones."
+  ],
+  "credentials": [
+    {
+      "label": "Education",
+      "detail": "B.Comp.Sc in Computer Science, Lambung Mangkurat University — GPA 3.79 (Cum Laude)"
+    },
+    {
+      "label": "Accreditation",
+      "detail": "Bangkit Academy Alum (Google, GoTo, Traveloka) — Cloud & Computing Track"
+    },
+    {
+      "label": "Industry Experience",
+      "detail": "Former Lead Programmer & Marketing Analyst (PT Surveyor Indonesia)"
+    },
+    {
+      "label": "Certification",
+      "detail": "BNSP Certified Competency"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "NAZAR GUNAWAN",
+  "role": "TECH-SAVVY VA",
+  "navItems": [
+    {
+      "label": "Work",
+      "href": "#work"
+    },
+    {
+      "label": "How I Work",
+      "href": "#how-i-work"
+    },
+    {
+      "label": "Tools",
+      "href": "#tools"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    }
+  ],
+  "ctaButton": {
+    "label": "Work with me",
+    "href": "#contact"
+  }
+}

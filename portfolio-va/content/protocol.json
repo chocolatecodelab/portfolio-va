@@ -1,0 +1,31 @@
+{
+  "sectionTitle": "Working Protocol & Data Security",
+  "sectionSubtitle": "How I safeguard sensitive information, handle access credentials, and maintain async operational momentum.",
+  "principles": [
+    {
+      "id": "credentials",
+      "tag": "ENCRYPTED ACCESS",
+      "title": "Credential Sanitization",
+      "description": "Zero plain-text password sharing. I interface exclusively through encrypted password managers (1Password, Bitwarden, LastPass) and environment variables for Apps Script integrations."
+    },
+    {
+      "id": "data-isolation",
+      "tag": "DATA INTEGRITY",
+      "title": "Defensive Data Architecture",
+      "description": "All spreadsheet systems and databases are engineered with strict role-based view/edit permissions, protected formula ranges, and automated version-history checkpoints to prevent accidental data overwrites."
+    },
+    {
+      "id": "nda",
+      "tag": "NDA READY",
+      "title": "Contractual Discretion",
+      "description": "Ready to execute standard Non-Disclosure Agreements (NDAs) before auditing your internal workflows, client lists, financial sheets, or proprietary operational documents."
+    },
+    {
+      "id": "cadence",
+      "tag": "ASYNC MOMENTUM",
+      "title": "Structured Communication",
+      "description": "Daily async status updates via Slack or Notion, paired with weekly end-of-week video recaps. No unnecessary meeting overhead; clear milestones, predictable turnarounds, and proactive escalation."
+    }
+  ],
+  "reassurance": "Trust is the prerequisite for high-leverage delegation. I treat your operational data with the same defensive standards as an enterprise engineering system."
+}

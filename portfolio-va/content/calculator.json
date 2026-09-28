@@ -1,0 +1,49 @@
+{
+  "sectionTitle": "Operations ROI Calculator",
+  "sectionSubtitle": "Estimate how many hours and financial bandwidth your team reclaims each year by replacing repetitive spreadsheet work with structured systems.",
+  "inputs": {
+    "hours": {
+      "label": "Weekly Hours Spent on Manual Admin & Data",
+      "description": "Copy-pasting data, inventory logging, manual report generation, inbox triage.",
+      "min": 4,
+      "max": 40,
+      "step": 1,
+      "default": 12,
+      "unit": "hrs / week"
+    },
+    "rate": {
+      "label": "Estimated Value of Your Time",
+      "description": "Founder opportunity cost or blended hourly wage of staff performing admin work.",
+      "min": 25,
+      "max": 200,
+      "step": 5,
+      "default": 65,
+      "unit": "$ / hr"
+    },
+    "teamSize": {
+      "label": "People Performing Manual Tasks",
+      "description": "Number of founders, operators, or assistants bogged down by manual workflows.",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "default": 1,
+      "unit": "person"
+    }
+  },
+  "metrics": {
+    "hoursReclaimedMonthly": "Hours Reclaimed / Month",
+    "hoursReclaimedAnnual": "Hours Reclaimed / Year",
+    "annualValueReclaimed": "Estimated Value Reclaimed / Year",
+    "efficiencyRate": 0.65,
+    "efficiencyNote": "Based on a conservative 65% time reduction achieved through structured Google Sheets, Apps Script automations, and standardized SOPs."
+  },
+  "recommendations": {
+    "badge": "RECOMMENDED FIT",
+    "sprintTitle": "Systems & Automation Sprint",
+    "sprintCondition": "Your bottleneck is concentrated in repetitive data entry or reporting. A 1–2 week fixed sprint will eliminate the core manual friction.",
+    "retainerTitle": "Operational Right-Hand Retainer",
+    "retainerCondition": "Your team loses over 15 hours weekly across ongoing operations. A dedicated async partner will compound savings week after week.",
+    "ctaLabel": "Discuss This Strategy"
+  },
+  "footnote": "No fluff formulas: Hours saved = (Weekly Hours × Team × 65% efficiency × 52 weeks). Value = Hours saved × Hourly rate."
+}

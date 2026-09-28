@@ -1,0 +1,52 @@
+{
+  "sectionTitle": "Engagement Models",
+  "sectionSubtitle": "Three structured ways to partner — designed for operational clarity, predictable turnaround, and zero micromanagement.",
+  "models": [
+    {
+      "id": "retainer",
+      "badge": "MONTHLY RETAINER",
+      "title": "Operational Right-Hand",
+      "tagline": "Ongoing async partnership for founders needing continuous operational bandwidth.",
+      "bestFor": "Solo founders, creators, or boutique agencies needing 10–20 hours/week of dedicated operational support.",
+      "deliverables": [
+        "Executive scheduling & inbox triage protocol",
+        "Continuous Google Sheets & CRM maintenance",
+        "Recurring task automation & workflow tweaks",
+        "Proactive problem solving & weekly status recaps"
+      ],
+      "cadence": "Daily async logs via Slack/Notion + Weekly Loom check-in",
+      "ctaLabel": "Discuss Retainer"
+    },
+    {
+      "id": "sprint",
+      "badge": "FIXED-PRICE SPRINT",
+      "title": "Systems & Automation Sprint",
+      "tagline": "End-to-end design and build for a specific operational bottleneck.",
+      "bestFor": "Teams struggling with messy spreadsheets, manual POS/inventory, or disconnected tools who want a turnkey system.",
+      "deliverables": [
+        "Full bespoke Google Sheets system architecture",
+        "Formulas locked & non-technical user interface",
+        "Google Apps Script automation & webhooks",
+        "Loom video walkthrough & 14-day warranty support"
+      ],
+      "cadence": "1–2 week turnaround with milestone-driven deliverables",
+      "ctaLabel": "Book a Sprint"
+    },
+    {
+      "id": "research",
+      "badge": "PROJECT-BASED",
+      "title": "Executive Research Dossier",
+      "tagline": "Decision-ready market intelligence, competitor benchmarking, or lead sourcing.",
+      "bestFor": "Founders planning a new product launch, market entry, or preparing an investment memo.",
+      "deliverables": [
+        "Comprehensive 10–15 competitor matrix",
+        "Feature gap & pricing comparison analysis",
+        "Executive 1-pager summary with strategic takeaways",
+        "Curated, verified lead database (if sourcing leads)"
+      ],
+      "cadence": "48–72 hour turnaround per research dossier",
+      "ctaLabel": "Request Dossier"
+    }
+  ],
+  "customNote": "Need a trial engagement or hybrid arrangement? Every partnership starts with a short scoping conversation to align on exact outcomes."
+}

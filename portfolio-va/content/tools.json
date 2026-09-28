@@ -1,0 +1,51 @@
+{
+  "sectionTitle": "Tools & Systems",
+  "sectionSubtitle": "The daily toolkit I use to organize operations, model data, and automate repetitive tasks.",
+  "categories": [
+    {
+      "name": "Workspace & Operations",
+      "tools": [
+        "Google Workspace",
+        "Notion",
+        "Slack",
+        "Asana / Trello"
+      ]
+    },
+    {
+      "name": "Data & Systems",
+      "tools": [
+        "Google Sheets",
+        "Google Apps Script",
+        "Airtable",
+        "Microsoft Excel"
+      ]
+    },
+    {
+      "name": "Automation & AI",
+      "tools": [
+        "AI-Assisted Workflows",
+        "Custom Scripting",
+        "REST APIs",
+        "Zapier / Make"
+      ]
+    },
+    {
+      "name": "Content & Documentation",
+      "tools": [
+        "Figma",
+        "Canva",
+        "WordPress",
+        "Technical Markdown"
+      ]
+    },
+    {
+      "name": "Development Foundations",
+      "tools": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Firebase"
+      ]
+    }
+  ]
+}

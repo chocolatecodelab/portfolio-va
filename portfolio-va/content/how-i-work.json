@@ -1,0 +1,26 @@
+{
+  "sectionTitle": "How I Work",
+  "tagline": "I don't just complete tasks. I look for ways to make recurring work easier.",
+  "steps": [
+    {
+      "step": "01",
+      "title": "UNDERSTAND",
+      "description": "Deeply examine your workflow, existing friction, and what outcome actually matters before touching any tools."
+    },
+    {
+      "step": "02",
+      "title": "ORGANIZE",
+      "description": "Structure the information, clean the inputs, and design clear standard operating procedures or reliable data schemas."
+    },
+    {
+      "step": "03",
+      "title": "EXECUTE",
+      "description": "Deliver the work with high attention to detail, precision, consistent deadlines, and proactive communication."
+    },
+    {
+      "step": "04",
+      "title": "IMPROVE",
+      "description": "Automate recurring steps and build lightweight systems so subsequent iterations take a fraction of the time."
+    }
+  ]
+}

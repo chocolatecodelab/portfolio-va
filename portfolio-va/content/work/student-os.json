@@ -1,0 +1,19 @@
+{
+  "slug": "student-os",
+  "title": "Student OS",
+  "tagline": "A personal operating system for university life — academic tracking, task management, goals, and a full Google Drive filing system — built into one Google Sheet.",
+  "problem": "University coursework, semester deadlines, syllabi, and grade documents are scattered across disparate messaging groups and personal drives, making longitudinal academic progress difficult to monitor.",
+  "solution": "A centralized academic command center featuring GPA target simulators, milestone trackers, and automated Google Drive folder provisioning linked directly to semester course records.",
+  "results": [
+    "Automated & idempotent Google Drive folder provisioning created dynamically per course and semester",
+    "Coursework indexing system that links submission documents directly to their corresponding task records",
+    "Four-year academic schema engineered to organize long-term coursework and transcript histories in a single system",
+    "GPA target simulator providing real-time projections and academic standing visibility"
+  ],
+  "tags": [
+    "System Design",
+    "Google Drive Automation",
+    "Information Architecture",
+    "Product Thinking"
+  ]
+}
