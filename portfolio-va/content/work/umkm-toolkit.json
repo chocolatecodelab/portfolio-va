@@ -1,6 +1,6 @@
 {
   "slug": "umkm-toolkit",
-  "title": "UMKM Business Toolkit",
+  "title": "SENARA UMKM Business Toolkit",
   "tagline": "A point-of-sale, inventory, and pricing system built inside Google Sheets — designed so a small shop owner who's never touched a spreadsheet formula can run their daily business from it.",
   "problem": "Small business owners frequently struggle to track real profit margins because unit pricing is determined by guesswork, and manual cash flow tracking easily breaks when multiple staff members handle inventory.",
   "solution": "An integrated point-of-sale register, automated cost-to-price margin calculator (HPP), and real-time profit & loss dashboard built entirely inside Google Sheets without requiring external apps or subscription fees.",
@@ -15,5 +15,7 @@
     "Google Apps Script",
     "Business Logic",
     "UX for Non-Technical Users"
-  ]
+  ],
+  "image": "/img/cover_portfolio_1080x1080_en.png",
+  "liveUrl": "https://docs.google.com/spreadsheets/d/1ptv40x-gqkxn8xWyZN2n3Z_XEf0iJjcnXadfTlFHc9w/edit?usp=sharing"
 }

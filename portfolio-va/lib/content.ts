@@ -17,6 +17,7 @@ import heroData from '../content/hero.json';
 import pillarsData from '../content/pillars.json';
 import umkmData from '../content/work/umkm-toolkit.json';
 import studentOsData from '../content/work/student-os.json';
+import marketDossierData from '../content/work/market-dossier.json';
 import technicalCapabilityData from '../content/work/technical-capability.json';
 import howIWorkData from '../content/how-i-work.json';
 import toolsData from '../content/tools.json';
@@ -36,8 +37,13 @@ export function getPillarsContent(): PillarsContent {
 }
 
 export function getSelectedWork(): WorkItem[] {
-  return [umkmData as WorkItem, studentOsData as WorkItem];
+  return [
+    umkmData as WorkItem,
+    studentOsData as WorkItem,
+    marketDossierData as WorkItem,
+  ];
 }
+
 
 export function getTechnicalCapability(): TechnicalCapabilityContent {
   return technicalCapabilityData as TechnicalCapabilityContent;

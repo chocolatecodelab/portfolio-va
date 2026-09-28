@@ -58,13 +58,30 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
 
         {/* Optional Visual Preview Slot (Screenshot/Artifact) */}
         {work.image && (
-          <div className="mb-8 border border-ink bg-paper-raised overflow-hidden rounded-[2px]">
-            <img
-              src={work.image}
-              alt={`${work.title} interface preview`}
-              className="w-full h-auto object-cover max-h-[380px]"
-              loading="lazy"
-            />
+          <div className="mb-8 border border-ink bg-paper-raised overflow-hidden rounded-[2px] relative group/img">
+            {work.liveUrl ? (
+              <a
+                href={work.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer"
+                title={`Open ${work.title} live sheet`}
+              >
+                <img
+                  src={work.image}
+                  alt={`${work.title} interface preview`}
+                  className="w-full h-auto object-cover max-h-[480px] transition-transform duration-200 group-hover/img:scale-[1.01]"
+                  loading="lazy"
+                />
+              </a>
+            ) : (
+              <img
+                src={work.image}
+                alt={`${work.title} interface preview`}
+                className="w-full h-auto object-cover max-h-[480px]"
+                loading="lazy"
+              />
+            )}
           </div>
         )}
 
@@ -84,6 +101,61 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
             <p className="text-ink-soft leading-relaxed">{work.solution}</p>
           </div>
         </div>
+
+        {/* Optional Deliverable Ecosystem (for multi-asset deliverables like Market Dossier) */}
+        {work.deliverables && work.deliverables.length > 0 && (
+          <div className="mb-8 p-5 bg-paper-raised/70 border border-ink/20 rounded-[2px]">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-ink/70 font-semibold block mb-3">
+              DELIVERABLE ECOSYSTEM (LIVE ASSETS)
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {work.deliverables.map((item) => {
+                const isPlaceholder = item.url.includes('YOUR_');
+                return (
+                  <div
+                    key={item.title}
+                    className="p-3 bg-paper border border-ink/20 rounded-[2px] flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-[10px] font-mono uppercase font-bold text-accent">
+                          {item.platform}
+                        </span>
+                        <span className="text-[9px] font-mono text-ink-soft/70">
+                          {item.access}
+                        </span>
+                      </div>
+                      <h5 className="font-body text-xs font-semibold text-ink leading-snug">
+                        {item.title}
+                      </h5>
+                      <p className="font-body text-[11px] text-ink-soft mt-1 leading-normal">
+                        {item.description}
+                      </p>
+                    </div>
+
+                    <div className="mt-3 pt-2 border-t border-ink/10">
+                      {isPlaceholder ? (
+                        <span className="text-[10px] font-mono text-ink-soft/70">
+                          Included in Package
+                        </span>
+                      ) : (
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-[11px] font-mono text-ink hover:text-accent font-medium underline underline-offset-2 transition-colors"
+                        >
+                          <span>Open {item.platform}</span>
+                          <span aria-hidden="true">↗</span>
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Measurable Results / Built Capabilities */}
         <div className="mb-8">
@@ -105,6 +177,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
           </ul>
         </div>
       </div>
+
 
       {/* Capability Tags & Live Actions */}
       <div className="pt-6 border-t border-ink/15 mt-auto flex flex-col sm:flex-row sm:items-center justify-between gap-4">

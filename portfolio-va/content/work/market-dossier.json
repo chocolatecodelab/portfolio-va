@@ -1,0 +1,44 @@
+{
+  "slug": "market-dossier",
+  "title": "Market Entry Dossier: Flowbase in Indonesia",
+  "tagline": "An institutional market intelligence deliverable system built across Google Sheets, Docs, and Slides\u2014proving market viability, competitive white space, and localized go-to-market strategy.",
+  "problem": "Generic research reports often rely on superficial AI generalities, lack dynamic quantitative modeling, and use disconnected PDFs that cannot integrate into a client's everyday Google Workspace operations.",
+  "solution": "A synchronized three-part deliverable ecosystem: an institutional Sheets calculation engine (TAM/SAM/SOM, scoring formulas, source tracker), an in-depth Docs narrative report, and an 8-slide executive decision deck with native linked charts.",
+  "results": [
+    "Single source of truth architecture where Docs tables and Slides charts update directly from Sheets formulas with zero manual retyping",
+    "Zero untraceable claims with 100% of quantitative metrics cross-referenced in an integrated Source Tracker",
+    "Strict Editorial Newspaper \u00d7 90s Terminal visual discipline executed with Paper (#F4F0E8) and Ink (#171717) tokens",
+    "Fully articulated market entry playbook for Flowbase capturing the $16.5M boutique creative agency beachhead in Indonesia"
+  ],
+  "tags": [
+    "Market Research",
+    "Google Workspace Systems",
+    "Competitive Intelligence",
+    "Financial Modeling"
+  ],
+  "image": "/img/market-dossier-cover.jpg",
+  "liveUrl": "https://docs.google.com/spreadsheets/d/13yXGew9-8MTub8db2iCnbltq0GRsqU0plV45fkyLqhk/edit?usp=sharing",
+  "deliverables": [
+    {
+      "title": "Executive Narrative Report",
+      "platform": "Google Docs",
+      "access": "Viewer Link (Public)",
+      "url": "https://docs.google.com/document/d/YOUR_DOC_ID/edit?usp=sharing",
+      "description": "Comprehensive 8-section diligence report featuring market sizing, ICP teardown, and linked competitor matrix."
+    },
+    {
+      "title": "Executive Decision Deck",
+      "platform": "Google Slides",
+      "access": "Viewer Link (Public)",
+      "url": "https://docs.google.com/presentation/d/YOUR_SLIDES_ID/edit?usp=sharing",
+      "description": "8-slide visual presentation deck with linked useful informations  designed for a 10-minute executive readout."
+    },
+    {
+      "title": "Dossier Data Workbook",
+      "platform": "Google Sheets",
+      "access": "Viewer Link (Public)",
+      "url": "https://docs.google.com/spreadsheets/d/13yXGew9-8MTub8db2iCnbltq0GRsqU0plV45fkyLqhk/edit?usp=sharing",
+      "description": "5-tab calculation engine with dynamic TAM/SAM/SOM formulas, weighted competitor scores, and source registry."
+    }
+  ]
+}

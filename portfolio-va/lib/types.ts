@@ -23,6 +23,14 @@ export interface PillarsContent {
   pillars: PillarItem[];
 }
 
+export interface WorkDeliverable {
+  title: string;
+  platform: string;
+  access: string;
+  url: string;
+  description: string;
+}
+
 export interface WorkItem {
   slug: string;
   title: string;
@@ -34,7 +42,9 @@ export interface WorkItem {
   image?: string;
   liveUrl?: string;
   videoUrl?: string;
+  deliverables?: WorkDeliverable[];
 }
+
 
 export interface TechnicalCapabilityContent {
   heading: string;
