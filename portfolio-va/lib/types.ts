@@ -25,10 +25,26 @@ export interface PillarsContent {
 
 export interface WorkDeliverable {
   title: string;
-  platform: string;
-  access: string;
-  url: string;
+  platform?: string;
+  access?: string;
+  url?: string;
   description: string;
+}
+
+export interface WorkMetric {
+  label: string;
+  value?: string;
+  before?: string;
+  after?: string;
+  improvement?: string;
+  detail?: string;
+}
+
+export interface WorkClient {
+  name: string;
+  type: string;
+  teamSize?: string;
+  location?: string;
 }
 
 export interface WorkItem {
@@ -43,7 +59,17 @@ export interface WorkItem {
   liveUrl?: string;
   videoUrl?: string;
   deliverables?: WorkDeliverable[];
+  subtitle?: string;
+  client?: WorkClient;
+  metrics?: WorkMetric[];
+  category?: string;
+  role?: string;
+  featured?: boolean;
+  timeline?: string;
+  challenge?: string;
+  technicalHighlights?: string[];
 }
+
 
 
 export interface TechnicalCapabilityContent {

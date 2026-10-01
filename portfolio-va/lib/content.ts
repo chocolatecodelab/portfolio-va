@@ -18,6 +18,7 @@ import pillarsData from '../content/pillars.json';
 import umkmData from '../content/work/umkm-toolkit.json';
 import studentOsData from '../content/work/student-os.json';
 import marketDossierData from '../content/work/market-dossier.json';
+import onboardingPipelineData from '../content/work/onboarding-pipeline.json';
 import technicalCapabilityData from '../content/work/technical-capability.json';
 import howIWorkData from '../content/how-i-work.json';
 import toolsData from '../content/tools.json';
@@ -38,11 +39,13 @@ export function getPillarsContent(): PillarsContent {
 
 export function getSelectedWork(): WorkItem[] {
   return [
+    onboardingPipelineData as WorkItem,
     umkmData as WorkItem,
-    studentOsData as WorkItem,
     marketDossierData as WorkItem,
+    studentOsData as WorkItem,
   ];
 }
+
 
 
 export function getTechnicalCapability(): TechnicalCapabilityContent {

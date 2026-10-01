@@ -14,10 +14,13 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
     >
       <div>
         {/* Header / Title */}
+        {/* Header / Title */}
         <div className="border-b border-ink/15 pb-4 mb-6 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
           <div>
             <span className="text-[11px] font-mono uppercase tracking-widest text-ink/50 block mb-1">
-              CASE STUDY · OPERATIONAL SYSTEM
+              {work.client
+                ? `${work.category || 'WORKFLOW AUTOMATION'} · CLIENT: ${work.client.name.toUpperCase()}`
+                : 'CASE STUDY · OPERATIONAL SYSTEM'}
             </span>
             <h3 className="font-display font-medium text-2xl sm:text-3xl text-ink tracking-tight group-hover:text-accent transition-colors">
               {work.title}
@@ -53,7 +56,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
 
         {/* Framing / Core Value */}
         <p className="font-body text-base sm:text-lg text-ink leading-relaxed mb-6 font-medium">
-          {work.tagline}
+          {work.tagline || work.subtitle}
         </p>
 
         {/* Optional Visual Preview Slot (Screenshot/Artifact) */}
@@ -85,13 +88,39 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
           </div>
         )}
 
+        {/* Optional High-Impact Metrics Strip */}
+        {work.metrics && work.metrics.length > 0 && (
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
+            {work.metrics.map((m) => (
+              <div
+                key={m.label}
+                className="p-3.5 bg-paper-raised/70 border border-ink/20 rounded-[2px] flex flex-col justify-between"
+              >
+                <span className="text-[10px] font-mono uppercase tracking-wider text-ink/60 font-semibold block mb-1">
+                  {m.label}
+                </span>
+                <div>
+                  <span className="font-display font-bold text-xl sm:text-2xl text-accent block leading-none mb-1">
+                    {m.value || m.improvement || m.after}
+                  </span>
+                  {(m.detail || m.improvement) && (
+                    <span className="text-[11px] font-body text-ink-soft leading-tight block">
+                      {m.detail || m.improvement}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Problem & Solution Blocks */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-sm font-body">
           <div className="bg-paper-raised/60 p-4 border-l-2 border-ink/40">
             <h4 className="font-mono text-xs uppercase tracking-wider text-ink/70 font-semibold mb-2">
               The Operational Challenge
             </h4>
-            <p className="text-ink-soft leading-relaxed">{work.problem}</p>
+            <p className="text-ink-soft leading-relaxed">{work.problem || work.challenge}</p>
           </div>
 
           <div className="bg-paper-raised/60 p-4 border-l-2 border-accent">
@@ -102,6 +131,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
           </div>
         </div>
 
+
         {/* Optional Deliverable Ecosystem (for multi-asset deliverables like Market Dossier) */}
         {work.deliverables && work.deliverables.length > 0 && (
           <div className="mb-8 p-5 bg-paper-raised/70 border border-ink/20 rounded-[2px]">
@@ -110,7 +140,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
             </span>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               {work.deliverables.map((item) => {
-                const isPlaceholder = item.url.includes('YOUR_');
+                const isPlaceholder = !item.url || item.url.includes('YOUR_');
                 return (
                   <div
                     key={item.title}
@@ -119,7 +149,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-[10px] font-mono uppercase font-bold text-accent">
-                          {item.platform}
+                          {item.platform || 'Asset'}
                         </span>
                         <span className="text-[9px] font-mono text-ink-soft/70">
                           {item.access}
@@ -134,7 +164,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
                     </div>
 
                     <div className="mt-3 pt-2 border-t border-ink/10">
-                      {isPlaceholder ? (
+                      {isPlaceholder || !item.url ? (
                         <span className="text-[10px] font-mono text-ink-soft/70">
                           Included in Package
                         </span>
@@ -145,7 +175,7 @@ export function WorkCard({ work, className = '' }: WorkCardProps) {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1 text-[11px] font-mono text-ink hover:text-accent font-medium underline underline-offset-2 transition-colors"
                         >
-                          <span>Open {item.platform}</span>
+                          <span>Open {item.platform || 'Asset'}</span>
                           <span aria-hidden="true">↗</span>
                         </a>
                       )}

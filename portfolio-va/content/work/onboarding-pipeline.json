@@ -1,0 +1,107 @@
+{
+  "slug": "remote-onboarding-pipeline",
+  "title": "Remote Onboarding Pipeline (Google Workspace Edition)",
+  "subtitle": "Zero-Cost 6-in-1 Automated Onboarding Engine for Distributed Teams",
+  "tagline": "A zero-cost, 6-in-1 automated onboarding pipeline built natively inside Google Workspace — triggering Drive provisioning, personalized welcome kits, calendar milestone bookings, and team chat announcements in under 30 seconds.",
+  "client": {
+    "name": "Northbound Studio",
+    "type": "Remote-first Content & Marketing Agency",
+    "teamSize": "10 distributed team members",
+    "location": "Global / Multi-timezone"
+  },
+  "category": "Workflow Automation & Systems Design",
+  "role": "Systems Architect & Tech-Savvy Virtual Assistant",
+  "featured": true,
+  "timeline": "September 2026",
+  "image": "/img/onboarding_portfolio_hero.jpg",
+  "liveUrl": "https://docs.google.com/spreadsheets/d/1ZySRprpfs7apKNeY65lbd2ZS1rHU_M54BNbKHoB04Lk/edit?usp=sharing",
+  "metrics": [
+    {
+      "label": "Time to Onboard 1 Hire",
+      "value": "< 3 mins",
+      "before": "20 mins",
+      "after": "< 3 mins",
+      "improvement": "85% admin time saved"
+    },
+    {
+      "label": "Execution Latency",
+      "value": "< 30 sec",
+      "detail": "All 5 automated actions executed concurrently upon form submission"
+    },
+    {
+      "label": "Additional Tool Cost",
+      "value": "$0 / mo",
+      "detail": "100% native to Google Workspace (replaces Airtable, Make.com, & Slack bots)"
+    },
+    {
+      "label": "Process Consistency",
+      "value": "100%",
+      "detail": "Eliminated human omission via atomic LockService & automated provisioning"
+    }
+  ],
+  "tags": [
+    "Google Apps Script",
+    "Workflow Automation",
+    "Google Workspace Integration",
+    "Process Design",
+    "JavaScript V8",
+    "LockService"
+  ],
+  "problem": "Northbound Studio, a growing remote-first content agency, regularly contracts specialized freelancers (writers, editors, designers, and project managers). With no dedicated HR department, the Operations Lead spent 20+ repetitive minutes per hire manually creating Google Drive folders, emailing welcome instructions, scheduling 3 onboarding calls, notifying team channels, and updating spreadsheets. Process execution was inconsistent: hires were occasionally missed, invites were sent late, and company leadership lacked a centralized, real-time dashboard of who was currently onboarding.",
+  "challenge": "Northbound Studio, a growing remote-first content agency, regularly contracts specialized freelancers (writers, editors, designers, and project managers). With no dedicated HR department, the Operations Lead spent 20+ repetitive minutes per hire manually creating Google Drive folders, emailing welcome instructions, scheduling 3 onboarding calls, notifying team channels, and updating spreadsheets. Process execution was inconsistent: hires were occasionally missed, invites were sent late, and company leadership lacked a centralized, real-time dashboard of who was currently onboarding.",
+  "solution": "Architected and engineered a native Google Workspace automation pipeline requiring zero external paid subscriptions. Through a single 6-field Google Form intake, the system triggers a modular Google Apps Script (V8) orchestrator that executes 5 automated actions within 30 seconds: generates a structured 3-tier Drive folder, sends an Apple-inspired welcome email with plain-text fallback, schedules 3 milestone calendar invites (Kickoff, Day 3, and Day 7 check-ins), broadcasts a rich cardsV2 notification to Google Chat, and logs audit trails to a live, formula-driven dashboard.",
+  "results": [
+    "Eliminated 85% of manual administrative onboarding time (reduced from 20 minutes to under 3 minutes per hire)",
+    "Sub-30-second concurrent execution across 5 automated actions upon single Google Form submission",
+    "100% process consistency with atomic ID generation (HIRE-XXXX) using LockService to prevent race conditions",
+    "Zero added software cost: Built 100% natively on Google Workspace, replacing paid subscriptions like Airtable or Make.com",
+    "Fault-isolated architecture where failures in one external service never block remaining onboarding workflows"
+  ],
+  "deliverables": [
+    {
+      "title": "Central Data Warehouse & Live Tracker",
+      "platform": "Google Sheets",
+      "access": "Viewer Link (Public)",
+      "url": "https://docs.google.com/spreadsheets/d/1ZySRprpfs7apKNeY65lbd2ZS1rHU_M54BNbKHoB04Lk/edit?usp=sharing",
+      "description": "Tabular _DB_Onboarding registry with data validation, append-only _LOG audit trail, and real-time dashboard."
+    },
+    {
+      "title": "Apps Script Orchestration Engine",
+      "platform": "Google Apps Script",
+      "access": "View Script",
+      "url": "https://script.google.com/d/1gzMuypQnTtLiExcGP2MN3X4qNGiEHxBOVQw6hotyYzkh32iL70-ozj5W/edit?usp=sharing",
+      "description": "Modular V8 automation script executing Drive provisioning, Gmail dispatcher, Calendar scheduler, and Chat webhook."
+    },
+    {
+      "title": "Universal Intake Google Form",
+      "platform": "Google Forms",
+      "access": "Sample Intake",
+      "url": "https://docs.google.com/spreadsheets/d/1ZySRprpfs7apKNeY65lbd2ZS1rHU_M54BNbKHoB04Lk/edit?usp=sharing",
+      "description": "Standardized 6-field intake collecting hire name, role, email, project, start date, and special instructions."
+    }
+  ],
+  "architecture": {
+    "trigger": "Google Form onFormSubmit (Spreadsheet / Form Installable Trigger)",
+    "runtime": "Google Apps Script (V8 Engine) managed via clasp CLI",
+    "services": [
+      "SpreadsheetApp",
+      "DriveApp",
+      "GmailApp",
+      "CalendarApp",
+      "UrlFetchApp",
+      "LockService"
+    ]
+  },
+  "technicalHighlights": [
+    "Strict Fault Isolation: Every external service (Drive, Gmail, Calendar, Chat) runs inside independent try/catch blocks; failure in one step never aborts the pipeline.",
+    "Full Idempotency: Prevents duplicate folders or calendar invites if a form is double-submitted or re-triggered over unstable networks.",
+    "Zero Hardcoding: All configurations (company name, root folder ID, webhook URL, Ops Lead email) are centrally stored in _CONFIG.",
+    "Minimal OAuth Scope Footprint: Restricted strictly to current sheet, drive.file, and necessary communications endpoints.",
+    "Graceful Degradation: If Drive creation fails, welcome emails still dispatch with polite placeholder notices rather than failing silently."
+  ],
+  "artifacts": {
+    "spreadsheetDemoUrl": "https://docs.google.com/spreadsheets/d/1ZySRprpfs7apKNeY65lbd2ZS1rHU_M54BNbKHoB04Lk/edit?usp=sharing",
+    "scriptEditorUrl": "https://script.google.com/d/1gzMuypQnTtLiExcGP2MN3X4qNGiEHxBOVQw6hotyYzkh32iL70-ozj5W/edit?usp=sharing",
+    "heroImage": "/img/onboarding_portfolio_hero.jpg"
+  }
+}
